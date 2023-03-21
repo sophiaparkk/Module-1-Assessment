@@ -180,32 +180,30 @@ console.log(days)
 
 // CODE HERE
 
-let fujiTons = []
-let galaTons = []
-let pinkTons = []
+//let pinkTons = []
 
-fujiAcrescopy = fujiAcres.slice(0,7)
-for (let i=0; i<fujiAcrescopy.length; i++) {
-    fujiAcrescopy[i] = fujiAcrescopy[i] * 6.5
-
+let fujiTons = fujiAcres.slice(0,7)
+for (let i=0; i<fujiTons.length; i++) {
+    fujiTons[i] = fujiTons[i] * 6.5
+    //fujiTons.push(fujiAcrescopy)
 }
-fujiTons.push(fujiAcrescopy)
+
 console.log(fujiTons)
 
-galaAcrescopy = galaAcres.slice(0,7)
-for (let i=0; i<galaAcrescopy.length; i++) {
-    galaAcrescopy[i] = galaAcrescopy[i] * 6.5
+let galaTons = galaAcres.slice(0,7)
+for (let i=0; i<galaTons.length; i++) {
+    galaTons[i] = galaTons[i] * 6.5
 
 }
-galaTons.push(galaAcrescopy)
+
 console.log(galaTons)
 
-pinkAcrescopy = pinkAcres.slice(0,7)
-for (let i=0; i<pinkAcrescopy.length; i++) {
-    pinkAcrescopy[i] = pinkAcrescopy[i] * 6.5
+pinkTons = pinkAcres.slice(0,7)
+for (let i=0; i<pinkTons.length; i++) {
+    pinkTons[i] = pinkTons[i] * 6.5
 
 }
-pinkTons.push(pinkAcrescopy)
+
 console.log(pinkTons)
 //sliced each array to create a copy and then multiplied each value in each array by 6.5 using the for loop. Then pushed these values into the emply arrays
 
@@ -228,16 +226,21 @@ console.log(pinkTons)
 
 // CODE HERE 
 
-// let fujiPounds = 
+// let fujiPounds = arr.reduce(function (a,b) {
+//     return a + b;
+// }, 0);
+// console.log(fuji)
+
+
 // let galaPounds =
 // let pinkPounds =
 
-// fujiTonscopy = pinkTons.slice(0,7)
-// for (let i=0; i<fujiTonscopy.length; i++) {
-//     fujiTotalTons += fujiTonscopy[i]
-// }    
+let  fujiPounds = fujiTons.slice(0,7)
+for (let i=0; i<fujiPounds.length; i++) {
+    fujiPounds[i] = fujiPounds[0] + fujiPounds[1]
+}    
 
-// console.log(fujiTotalTons)
+console.log(fujiPounds)
 
 
 
